@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .MainBox {
+            height: 700px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+        }
+
+        .Toolbox {
+            height: 75px;
+            background-color: black;
+            opacity: 0.6;
+            position: fixed;
+            margin-top: auto;
+            width: 100%;
+            z-index: 1;
+        }
+
+        ul {
+            list-style: none;
+            display: inline-flex;
+        }
+
+        li a {
+            font-style: normal;
+            font-weight: 900;
+            font-variant: small-caps;
+            display: block;
+            color: gold;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .Header {
+            position: relative;
+            color: white;
+            font-size: 5rem;
+            text-align: center;
+            padding: 200px;
+            text-decoration: none;
+            font-weight: 900;
+            z-index: 1;
+        }
+
+        .Button {
+            position: relative;
+            bottom: 25%;
+            left: 42%;
+            background-color: #ee0979;
+            border-color: #ee0979;
+            border-radius: 50rem;
+            text-align: center;
+            color: white;
+            padding: 10px 50px;
+            display: inline-block;
+            cursor: pointer;
+            z-index: 1;
+            letter-spacing: 0.1rem;
+            font-weight: 600;
+        }
+        .Button:hover {
+            background-color: black;
+        }      
+        .Button:active {
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        .SecondPart {
+            height: 1800px;
+            background-color: white;
+            position:absolute;
+            z-index: 1;
+        }
+
+        .center {
+            display: block;
+            border-radius: 70%;
+            width: 30%;
+        }
+
+        .paragraf {
+            display: block;
+            width: 30%;
+            font-size: 1.5rem;
+        }
+        .Circle_1 {
+            height: 30rem;
+            width: 30rem;
+            bottom: 20rem;
+            left: 20rem;
+            z-index: 0;
+            position: absolute;
+            border-radius: 100%;
+            background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+        }
+        .Circle_2 {
+            height: 85rem;
+            width: 85rem;
+            bottom: -55rem;
+            left: -55rem;
+            z-index: 0;
+            position: absolute;
+            border-radius: 100%;
+            background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+        }
+        .Circle_3 {
+            height: 35rem;
+            width: 35rem;
+            bottom: -25rem;
+            left: 55rem;
+            z-index: 0;
+            position: absolute;
+            border-radius: 100%;
+            background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+        }
+        .Circle_4 {
+            height: 65rem;
+            width: 65rem;
+            bottom: 20rem;
+            left: 55rem;
+            z-index: 0;
+            position: absolute;
+            border-radius: 100%;
+            background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+        }
+    </style>
+</head>
+<!--nav elementi kullanmadım görüntü olduğu için böyle kalabilir-->
+<body style="margin: 0%;">
+    <div>
+        <div class="MainBox">
+            <div class="Toolbox">
+                <ul style="float: left;  padding-left: 200px;">
+                    <li><a href="#TopPage">Start Bootstrap</a></li>
+                </ul>
+                <ul style="float: right; padding-right: 200px; ">
+                    <li><a href="#SignPage">Sign Up</a></li>
+                    <li><a href="#LoginPage">Login</a></li>
+                </ul>
+            </div>
+            <div class="Circle_1"></div>
+            <div class="Circle_2"></div>
+            <div class="Circle_3"></div>
+            <div class="Circle_4"></div>
+            <div class="Header">
+                <p style="margin: 15px;">One Page Wonder</p>
+                <p style="margin: 15px; font-size: 3rem; font-weight: 400;">Will Rock Your Socks Off</p>
+            </div>
+            <div class="Button">
+                <p>LEARN MORE</p>
+            </div>
+        </div>
+        <div class="SecondPart">
+            <div>
+                <img src="01.jpg" class="center" style="margin-top: 10%; margin-right: 15%; margin-left: auto; float: right;">
+                <p class="paragraf" style="margin-top: 15%; margin-left: 15%; margin-right: auto; float: left; font-size: 2rem; color: deeppink;">FOR THOSE ABOUT TO SEE!</p> 
+                <p class="paragraf" style="margin-left: 15%; margin-right: auto;float: left;">
+                    Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Delectus quos voluptates quod fuga officiis
+                    perspiciatis quasi inventore natus dolorum hic illo iure cumque architecto, rem magni possimus quia.
+                    Quam, sed!
+                </p>
+            </div>
+            <div>
+                <img src="02.jpg" class="center" style="margin-top: 10%; margin-right: auto; margin-left: 15%; float: left;">  
+                <p class="paragraf" style="margin-top: 15%; margin-right: 15%; margin-left: auto; float: right; font-size: 2rem; color: deeppink;">WE SALUTE YOU!</p>         
+                <p class="paragraf" style="margin-right: 15%; margin-left: auto; float: right;">
+                    Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Delectus quos voluptates quod
+                    fuga officiis
+                    perspiciatis quasi inventore natus dolorum hic illo iure cumque architecto, rem magni possimus quia.
+                    Quam, sed!
+                </p>
+            </div>
+            <div>
+                <img src="03.jpg" class="center" style="margin-top: 10%; margin-right: 15%; margin-left: auto; float: right;">
+                <p class="paragraf" style="margin-top: 15%; margin-left: 15%; margin-right: auto; float: left; font-size: 2rem; color: deeppink;">LET THERE BE ROCK!</p> 
+                <p class="paragraf" style="margin-left: 15%; margin-right: auto;float: left;">
+                    Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Delectus quos voluptates quod fuga officiis
+                    perspiciatis quasi inventore natus dolorum hic illo iure cumque architecto, rem magni possimus quia.
+                    Quam, sed!
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
